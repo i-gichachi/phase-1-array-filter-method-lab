@@ -1,4 +1,6 @@
-const drivers = [
+const drivers = ["Bobby", "Sammy", "Sally", "Annette", "Sarah", "Bobby"]
+
+const driverObjects = [
     {name: "Bobby", hometown: "Pittsburgh"},
     {name: "Sammy", hometown: "New York"},
     {name: "Sally", hometown: "Cleveland"},
@@ -18,4 +20,7 @@ const drivers = [
     return drivers.filter(driver => driver.name.toLowerCase() === query.toLowerCase())
   }
 
+  console.log(findMatching(drivers, "Bobby"))
+  console.log(fuzzyMatch(drivers, "Sa"))
+  console.log(matchName(driverObjects, "Bobby"))
 
